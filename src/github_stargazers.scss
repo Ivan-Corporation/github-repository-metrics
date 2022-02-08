@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+$color-black: #2d3436;
+$color-white: #dfe6e9;
+$color-light-gray: #b2bec3;
+
+$transition: all 0.5s ease-in-out;
+
+
+.github-stargazers {
+    display: flex;
+    align-items: center;
+    
+    &.theme-light {
+      .stargazers-icon {
+        fill: $color-black;
+      }
+      .stargazers-count {
+        fill: $color-black;
+        background-color: lighten($color-white, 5%);
+        color: $color-black;
+        &::before {background-color: lighten($color-white, 5%)}
+      }
+    }
+  
+    &.theme-dark {
+      .stargazers-icon {
+        fill: $color-white;
+      }
+      .stargazers-count {
+        fill: $color-white;
+        background-color: lighten($color-black, 5%);
+        color: $color-white;
+        &::before {background-color: lighten($color-black, 5%)}
+      }
+    }
+    
+    &.loaded {
+      .stargazers-count {
+        max-width: 60px;
+        
+        div {
+          transform: translateY(0px);
+        }
+      }
+    }
+    
+    a {display: flex}
+    
+    .stargazers-icon {
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    
+    .stargazers-count {
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border: 1px solid $color-light-gray;
+      border-radius: 5px;
+      font-size: 14px;
+      text-decoration: none;
+      margin-left: 10px;
+      max-width: 16px;
+      min-width: 26px;
+      transition: $transition;
+      
+      & > div {
+        overflow: hidden;
+      }
+      
+      & > div > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 7px;
+        position: relative;
+        transition: $transition;
+        transform: translateY(24px);
+      }
+      
+      &::before {
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid $color-light-gray;
+        border-left: 1px solid $color-light-gray;
+        transform: rotate(-45deg);
+        left: -4px;
+      }
+      
+      svg {
+        top: -19px;
+        position: absolute;
+        animation: rotate 1s infinite;
+      }
+    }
+  }
