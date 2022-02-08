@@ -10,7 +10,7 @@ export interface RepositoryMetricsProps {
 
 
 const StarIcon = () => (
-    <svg viewBox="0 0 16 16" version="1.1" width="16"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z" /></svg>
+    <svg viewBox="0 0 16 16" version="1.1" width="16"><path fillRule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z" /></svg>
 );
 
 const GithubIcon = () => (
@@ -19,7 +19,7 @@ const GithubIcon = () => (
     </svg>
 );
 
-const RepositoryMetrics = ({ owner, repo, theme }: RepositoryMetricsProps) => {
+export const RepositoryMetrics = ({ owner, repo, theme }: RepositoryMetricsProps) => {
     const [count, setCount] = useState(null);
     const format = (n: any) => n > 1000 ? `${(n / 1000).toFixed(1)
         }k` : n;
@@ -48,4 +48,3 @@ const RepositoryMetrics = ({ owner, repo, theme }: RepositoryMetricsProps) => {
         </div>
     );
 }
-export default RepositoryMetrics

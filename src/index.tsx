@@ -1,1 +1,1 @@
-export * from './RepositoryMetrics'
+export { RepositoryMetrics } from './RepositoryMetrics';
