@@ -51,3 +51,13 @@ const App = () => {
 
 ## Check demo here:
 ### https://komolio.netlify.app/projects
+
+
+---
+## Props:
+
+| props  | required | default  | description |
+| ------------- | ------------- | ------------- | ------------- |
+| owner(string)| yes | - | your github account username |
+| repo(string) | yes | - | your repository name|
+| theme(string) | yes | - | theme for component (light/dark) |
