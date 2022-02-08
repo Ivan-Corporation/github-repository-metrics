@@ -20,11 +20,17 @@ yarn add repository-metrics
 ## Usage:
 ```jsx
 // don't forget change props
-import { RepositoryMetrics } from '../src/RepositoryMetrics';
+import { RepositoryMetrics } from 'repository-metrics';
 
 const App = () => {
   return (
     <div>
+      <RepositoryMetrics 
+      owner='Ivan-Corporation' 
+      repo='Komolio' 
+      theme='light' 
+      />
+
       <RepositoryMetrics 
       owner='Ivan-Corporation' 
       repo='3D-Planet-destroyer' 
