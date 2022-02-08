@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './github_stargazers.scss'
 
-export interface GithubStarsProps {
+export interface RepositoryMetricsProps {
     owner: string,
     repo: string,
     theme: string,
@@ -19,7 +19,7 @@ const GithubIcon = () => (
     </svg>
 );
 
-const GithubStars = ({ owner, repo, theme }: GithubStarsProps) => {
+const RepositoryMetrics = ({ owner, repo, theme }: RepositoryMetricsProps) => {
     const [count, setCount] = useState(null);
     const format = (n: any) => n > 1000 ? `${(n / 1000).toFixed(1)
         }k` : n;
@@ -48,4 +48,4 @@ const GithubStars = ({ owner, repo, theme }: GithubStarsProps) => {
         </div>
     );
 }
-export default GithubStars
+export default RepositoryMetrics

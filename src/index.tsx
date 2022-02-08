@@ -1,1 +1,1 @@
-export * from './GithubStars'
+export * from './RepositoryMetrics'

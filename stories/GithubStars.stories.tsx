@@ -1,10 +1,10 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Thing, Props } from '../src';
+import { GithubStars } from '../src';
 
 const meta: Meta = {
   title: 'Welcome',
-  component: Thing,
+  component: GithubStars,
   argTypes: {
     children: {
       control: {
