@@ -1,5 +1,5 @@
 {
-  "version": "3.7.3",
+  "version": "3.7.5",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -44,6 +44,15 @@
     "url": "https://github.com/Ivan-Corporation/github-repository-metrics.git"
   },
   "module": "dist/repository-metrics.esm.js",
+  "keywords": [
+    "react",
+    "github",
+    "sass",
+    "api",
+    "component",
+    "stargazers",
+    "stars"
+  ],
   "size-limit": [
     {
       "path": "dist/repository-metrics.cjs.production.min.js",
