@@ -1,5 +1,5 @@
 {
-  "version": "3.7.1",
+  "version": "3.7.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -35,6 +35,14 @@
   },
   "name": "repository-metrics",
   "author": "Ivan",
+  "homepage": "https://github.com/Ivan-Corporation/github-repository-metrics",
+  "bugs": {
+    "url": "https://github.com/Ivan-Corporation/github-repository-metrics/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ivan-Corporation/github-repository-metrics.git"
+  },
   "module": "dist/repository-metrics.esm.js",
   "size-limit": [
     {
