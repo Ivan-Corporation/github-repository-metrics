@@ -6,7 +6,9 @@
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/repository-metrics)
 
 
-# Repository metrics for ```react```
+# Repository metrics for ```react``` ![image](https://user-images.githubusercontent.com/58357980/163430798-92917757-e75e-446e-ae15-6526b62b6c1a.png)
+
+
 
 ## This beauty and easy ``(4KB)`` react component can help you ``add metrics`` to your repositories also you can ```change component theme on light/dark```
 ----
