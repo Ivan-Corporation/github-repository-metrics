@@ -63,3 +63,6 @@ const App = () => {
 | owner(string)| yes | - | your github account username |
 | repo(string) | yes | - | your repository name|
 | theme(string) | yes | - | theme for component (light/dark) |
+
+
+https://www.npmjs.com/package/repository-metrics
